@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el HTML y el body ocupen toda la altura de la ventana */
+    display: flex; /* Utiliza Flexbox para que el body gestione el layout */
+    flex-direction: column; /* Los elementos dentro del body estarán en columna (header y section) */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: #ff720c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+.logo-container{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-container .logo{
+    max-width: 100px;
+    height: auto;
+}
+
+.navbar-container{
+    flex: 3;
+}
+
+.items-navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items-navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffce08;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.items-navbar a:hover{
+    transform: scale(1.1);
+    color: #72a0c1;
+}
+
+.mobile-nav {
+    display: none; 
+    font-family: "Poppins", sans-serif;
+    font-size: 16px; 
+    padding: 10px 15px; 
+    border: 2px solid #ff720c; 
+    background-color: #ffce08;
+    border-radius: 5px; 
+    color: #000000; 
+    cursor: pointer; 
+}
+
+
+.intro-container{
+    flex: 1;
+    background-image: url(../images/fondo.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 20px;
+}
+
+.intro-text {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.intro-text h1 {
+    font-size: 60px; 
+    color: black; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.name{
+    font-family: "Dawning of a New Day", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 85px;
+}
+
+.intro-text h2{
+    font-size: 40px; 
+    color: black; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.intro-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; 
+    color: black; 
+    line-height: 1.6; 
+    margin: 10px;
+}
+
+.intro-photo {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.intro-photo .photo {
+    width: 550px;
+    height: auto;
+    max-width: 100%; 
+    object-fit: contain; 
+}
+
+.footer {
+    background-color: #72a0c1; 
+    color: white; 
+    text-align: center; 
+    padding: 5px 0; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+@media(max-width: 1200px){
+    .intro-container{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .intro-text, .intro-photo {
+        flex: none;
+    }
+
+    .intro-text{
+        padding: 10px;
+    }
+
+    .intro-text h1 {
+        font-size: 40px; 
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .intro-text h2 {
+        font-size: 30px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        display: none; /* Oculta la navegación normal en móviles */
+    }
+
+    .mobile-nav {
+        display: block; /* Muestra el select en móviles */
+    }
+
+    .intro-text h1 {
+        font-size: 30px; 
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .intro-text h2 {
+        font-size: 24px;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+    }
+
+    .intro-photo .photo {
+        width: 100%;
+    }
+}
+
