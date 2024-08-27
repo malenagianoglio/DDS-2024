@@ -259,6 +259,84 @@ body {
     padding-bottom: 20px;
 }
 
+.contact-container{
+    flex: 1;
+    background-image: url(../images/fondo-aboutme.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+}
+
+.contact-container h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ff0f5e;
+    color: #000000;
+    text-align: justify;
+}
+
+.contact-container .form-control {
+    border-radius: 5px;
+}
+.contact-container .btn-primary {
+    background-color: #ff720c;
+    border-color: #ff720c;
+}
+.contact-container .btn-primary:hover {
+    background-color: #c00a49;
+    border-color: #c00a49;
+}
+
+.contact-socialnetworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ff0f5e;
+    color: #000000;
+    text-align: justify;
+}
+
+.contact-socialnetworks ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-socialnetworks ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-socialnetworks ul li a:hover{
+    color: #ff0f5e;
+}
+
+.contact-socialnetworks ul li a i{
+    color: #ff720c;
+}
+
 
 
 
