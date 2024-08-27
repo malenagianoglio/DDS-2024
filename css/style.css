@@ -4,9 +4,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Asegura que el HTML y el body ocupen toda la altura de la ventana */
-    display: flex; /* Utiliza Flexbox para que el body gestione el layout */
-    flex-direction: column; /* Los elementos dentro del body estarán en columna (header y section) */
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
 }
 
 body {
@@ -97,6 +97,8 @@ body {
     align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ff0f5e;
 }
 
 .intro-text h1 {
@@ -160,6 +162,69 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
 }
+
+.aboutme-container{
+    flex: 1;
+    background-image: url(../images/fondo-aboutme.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 60px;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.aboutme-container .aboutme-skills, .aboutme-experience{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ff0f5e;
+    color: #000000;
+    text-align: justify;
+}
+
+.aboutme-container .aboutme-skills h1, .aboutme-experience h1{
+    margin: 0px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.aboutme-container .aboutme-skills h3, .aboutme-experience h3{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.aboutme-container .aboutme-skills h5, .aboutme-experience h5{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.aboutme-container .aboutme-skills p, .aboutme-experience p{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.aboutme-container .aboutme-skills ul{
+    margin: 0px;
+    list-style: circle;
+}
+
+
+
+
+
+
+
+
 
 @media(max-width: 1200px){
     .intro-container{
