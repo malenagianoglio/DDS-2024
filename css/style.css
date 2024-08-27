@@ -218,8 +218,46 @@ body {
     list-style: circle;
 }
 
+.projects-container{
+    flex: 1;
+    background-image: url(../images/fondo-aboutme.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    flex-direction: column;
+    padding: 60px;
+    font-family: "Poppins", sans-serif;
+}
 
+.projects-container .projects-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ff0f5e;
+    color: #000000;
+    text-align: justify;
+}
 
+.projects-container .projects-info h1{
+    margin: 0px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.projects-container .projects-info h3{
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.projects-container .projects-info p{
+    margin: 0px;
+    padding-bottom: 20px;
+}
 
 
 
